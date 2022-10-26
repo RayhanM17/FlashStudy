@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <title>FlashStudy | Multipurpose Studying</title>
+</head>
+<body class="bg-dark">
+  <!-- NavBar -->
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">
+        <h2>Flash Study</h2>
+      </span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link active"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link"> About </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <hr class="border border-secondary border-1 opacity-50">
+
+  <!-- Content -->
+  <div class="container mt-5">
+    <!-- Form Card -->
+    <div class="card text-bg-secondary" id="form-container">
+      <div class="card-body">
+        <h5 class="card-title">Flash Card Creator</h5>
+        <br>
+        <form class="call">
+          <div class="row mt-3">
+            <div class="input-field col s6">
+              <label for="item-f-text" class="form-label">Front Text</label>
+              <textarea type="text" class="form-control" id="item-f-text"></textarea>
+            </div>
+            <div class="input-field col s6">
+              <label for="item-b-text" class="form-label">Back Text</label>
+              <textarea type="text" class="form-control" id="item-b-text"> </textarea>
+            </div>
+          </div>
+          <div class="row justify-content-center mt-5 text-s">
+            <div class="col">
+              <button class="add-btn btn btn-sm btn-primary darken-3"><i class="bi bi-plus"></i> Add Card</button>
+            </div>
+            <div class="col">
+              <button class="update-btn btn btn-sm btn-warning"><i class="bi bi-pencil-square"></i> Update Card</button>
+            </div>
+            <div class="col">
+              <button class="delete-btn btn btn-sm btn-danger"><i class="bi bi-trash"></i> Delete Card</button>
+            </div>
+            <div class="col">
+              <button class="back-btn btn btn-sm btn-dark fa-pull-right"><i class="bi bi-chevron-left"></i> Back</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Item List -->
+    <ul id="item-list" class="list-group mt-5">
+      <li class="list-group-item text-bg-secondary position relative" id="item-0">
+        <div class="row p-2">
+          <div class="col">
+            <p class="card-text">Fief</p>
+          </div>
+          <div class="col border-start border-dark border-2">
+            <p class="card-text ms-3">an estate granted to a vassal by a lord under the feudal system in medieval europe</p>
+          </div>
+        </div>
+        <a href="#" class="text-light position-absolute top-0 end-0 translate-middle-x">
+          <i class="edit-item bi bi-pencil-square"></i>
+        </a>
+      </li>
+    </ul>
+
+  </div>
+
+
+  
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
