@@ -1,0 +1,58 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  display: border-box;
+}
+
+.flash-logo{
+  width: 37.7px;
+  height: 37.7px;
+  background-image: url('./assets/Flashstudylogo.png');
+  background-position: center;
+  background-size:cover;
+}
+
+/* Card Flip CSS */
+
+.scene {
+  width: 75%;
+  height: 260px;
+  border: 1px solid #CCC;
+  margin: 40px 0;
+  perspective: 600px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 260px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card__face--front {
+  background: gray;
+}
+
+.card__face--back {
+  background: gray;
+  transform: rotateY(180deg);
+}
